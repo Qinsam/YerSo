@@ -1,0 +1,32 @@
+<scroll-view scroll-x="true" class="menubar">
+    <view class="menu">
+        <text class="{{dataId==0?'active':''}}" bindtap="check" id="baoxiao" data-id="0">爆笑</text>
+        <text class="{{dataId==1?'active':''}}" bindtap="check" id="diaobao" data-id="1">屌爆</text>
+        <text class="{{dataId==2?'active':''}}" bindtap="check" id="beiju" data-id="2">悲剧</text>
+        <text class="{{dataId==3?'active':''}}" bindtap="check" id="zhangzishi" data-id="3">涨姿势</text>
+    </view>
+</scroll-view>
+
+<!--> 
+<swiper current="{{currentTab}}" duration="300" bindchange="swiperTab">
+  <swiper-item ><image src="http://img.gaoxiaogif.cn/GaoxiaoGiffiles/images/beiju/201502/zixingcheshuaidao.gif"></image></swiper-item>
+  <swiper-item><view>爆笑</view></swiper-item>
+  <swiper-item><view>屌爆</view></swiper-item>
+  <swiper-item><view>悲剧</view></swiper-item>
+  <swiper-item><view>涨姿势</view></swiper-item>
+</swiper>
+-->
+
+<scroll-view scroll-y="true" class="content" style="height: {{windowHeight}}px; width: {{windowWidth}}px;" scroll-y="true" bindscrolltoupper="pullDownRefresh" bindscrolltolower="pullUpLoad">
+    <!--top-->
+    <view class="newsBox top">
+        <block wx:for="{{title}}">
+            <navigator class="details">
+                <text class="title">{{title[index]}}</text>
+                <view class="picBox">
+                    <image src="{{imgUrls[index]}}"></image>
+                </view>
+            </navigator>
+        </block>
+    </view>
+</scroll-view>

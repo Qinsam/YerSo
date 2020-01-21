@@ -1,0 +1,34 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color:aqua;
+}
+
+.usermotto {
+  margin-top: 200px;
+  font-size:30px;
+  color:deepskyblue
+}
+
+.container {
+  margin:0px;
+  position: fixed;
+  width:100%;
+  height:100%;
+  background-position: center center;
+  background-attachment: fixed;
+  background:url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1579429131498&di=45ba0183aff32349da28f7e4d5ce9887&imgtype=0&src=http%3A%2F%2Fdpic.tiankong.com%2F68%2Fi6%2FQJ6510716963.jpg') no-repeat; 
+  background-size: 100% 100%;
+}
